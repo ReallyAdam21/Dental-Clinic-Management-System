@@ -1,0 +1,22 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.yourcompany.toothtime
+productName: Tooth Time
+copyright: Copyright © 2025
+files:
+  - filter:
+      - dist/**/*
+      - out/main/**/*
+      - node_modules/**/*
+extraMetadata:
+  type: commonjs
+win:
+  target: nsis
+  icon: public/icon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  installerIcon: public/icon.ico
+  uninstallerIcon: public/icon.ico
+electronVersion: 37.2.6
